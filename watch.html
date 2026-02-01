@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieHub | Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/watch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="player-nav">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Home</a>
+        <div class="logo">Movie<span>Hub</span></div>
+    </nav>
+
+    <main class="player-container">
+        <div class="video-wrapper">
+            <video id="mainVideo" controls crossorigin="anonymous">
+                <source id="videoSource" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <section class="movie-details-section">
+            <div class="details-top">
+                <h1 id="movieTitle">Movie Title</h1>
+                <div class="meta">
+                    <span id="movieLang" class="badge">Language</span>
+                    <span id="movieGenre" class="badge">Genre</span>
+                    <span>HD • 2024</span>
+                </div>
+            </div>
+            <p id="movieDesc" class="description">
+                Loading description...
+            </p>
+        </section>
+    </main>
+
+    <script>
+        const movieData = [
+            {
+                "id": 1,
+                "title": "B.A. PASS 2",
+                "language": "Hindi",
+                "category": "Trending",
+                "genre": "Drama/Betrayal",
+                "poster": "https://images.unsplash.com/photo-1542204172-356399558651?q=80&w=1974&auto=format&fit=crop",
+                "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                "description": "Going against her family's wishes, dreamy-eyed Neha ventures out to chase her dreams. But a series of wrong decisions brings chaos into her life!",
+                "year": "2017",
+                "rating": "U/A 16+",
+                "duration": "2h 6m"
+            },
+            {
+                "id": 2,
+                "title": "Kabir Singh",
+                "language": "Hindi",
+                "category": "Popular",
+                "genre": "Action/Romance",
+                "poster": "https://images.unsplash.com/photo-1621685123223-2eb91df33f63?q=80&w=2070&auto=format&fit=crop",
+                "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+                "description": "Kabir Singh, a senior medical student with a passion for football and a quick temper, falls in love with Preeti.",
+                "year": "2019",
+                "rating": "A",
+                "duration": "2h 52m"
+            },
+            {
+                "id": 3,
+                "title": "Singham Returns",
+                "language": "Hindi",
+                "category": "Action Movies",
+                "genre": "Action/Crime",
+                "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=2070&auto=format&fit=crop",
+                "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+                "description": "Bajirao Singham returns as the Deputy Commissioner of Police in Mumbai.",
+                "year": "2014",
+                "rating": "U/A",
+                "duration": "2h 22m"
+            },
+            {
+                "id": 4,
+                "title": "Marakkar",
+                "language": "Malayalam",
+                "category": "Action Movies",
+                "genre": "Epic/Action",
+                "poster": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=2070&auto=format&fit=crop",
+                "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+                "description": "The story of Kunjali Marakkar IV, the naval chieftain of the Zamorin of Calicut.",
+                "year": "2021",
+                "rating": "U/A",
+                "duration": "3h 1min"
+            },
+            {
+                "id": 5,
+                "title": "Chhichhore",
+                "language": "Hindi",
+                "category": "Drama Movies",
+                "genre": "Drama/Comedy",
+                "poster": "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2059&auto=format&fit=crop",
+                "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+                "description": "A group of friends reunite for a nostalgic trip down memory lane.",
+                "year": "2019",
+                "rating": "U/A",
+                "duration": "2h 23m"
+            },
+            {
+                "id": 6,
+                "title": "Pushpa: The Rise",
+                "language": "Telugu",
+                "category": "Trending",
+                "genre": "Action/Crime",
+                "poster": "https://img.viva.com.vn/2021/11/17/poster-phim-pushpa-the-rise.jpg",
+                "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+                "description": "A laborer rises through the ranks of a red sandal smuggling syndicate.",
+                "year": "2021",
+                "rating": "U/A",
+                "duration": "2h 59m"
+            },
+            {
+                "id": 7,
+                "title": "Aavesham",
+                "language": "Malayalam",
+                "category": "Action Movies",
+                "genre": "Action/Comedy",
+                "poster": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=2070&auto=format&fit=crop",
+                "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+                "description": "Three teenagers come to Bangalore for their engineering education and get involved in a brawl.",
+                "year": "2024",
+                "rating": "U/A",
+                "duration": "2h 38m"
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const movieId = parseInt(urlParams.get('id'));
+
+            const movie = movieData.find(m => m.id === movieId);
+            if (movie) {
+                document.title = `Watch ${movie.title} | MovieHub`;
+                document.getElementById('movieTitle').textContent = movie.title;
+                document.getElementById('movieLang').textContent = movie.language;
+                document.getElementById('movieGenre').textContent = movie.genre;
+                document.getElementById('movieDesc').textContent = movie.description;
+
+                const video = document.getElementById('mainVideo');
+                const source = document.getElementById('videoSource');
+
+                // Set the poster of the video element
+                video.poster = movie.poster;
+                source.src = movie.videoUrl;
+                video.load();
+
+                // Set a cinematic background for the player area
+                document.querySelector('.player-container').style.background = `linear-gradient(rgba(10, 11, 20, 0.8), rgba(10, 11, 20, 0.8)), url('${movie.poster}') center/cover no-repeat fixed`;
+            } else {
+                document.body.innerHTML = '<div style="height:100vh; display:flex; align-items:center; justify-content:center; background:#0a0b14; color:white;"><h1>Movie not found</h1></div>';
+            }
+        });
+    </script>
+</body>
+
+</html>

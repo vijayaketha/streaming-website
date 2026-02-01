@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieHub | Stream Your Favorites</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo">Movie<span>Hub</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="movieSearch" placeholder="Search movies, genres...">
+            </div>
+
+            <!-- Language Selection Dropdown -->
+            <div class="lang-dropdown">
+                <button class="lang-dropbtn" id="langBtn">
+                    <span>Select Your Languages</span> <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown-content" id="langMenu">
+                    <label class="lang-checkbox">
+                        <input type="checkbox" value="Telugu" checked> Telugu
+                    </label>
+                    <label class="lang-checkbox">
+                        <input type="checkbox" value="Hindi" checked> Hindi
+                    </label>
+                    <label class="lang-checkbox">
+                        <input type="checkbox" value="English" checked> English
+                    </label>
+                    <label class="lang-checkbox">
+                        <input type="checkbox" value="Tamil" checked> Tamil
+                    </label>
+                    <label class="lang-checkbox">
+                        <input type="checkbox" value="Malayalam" checked> Malayalam
+                    </label>
+                    <label class="lang-checkbox">
+                        <input type="checkbox" value="Kannada" checked> Kannada
+                    </label>
+                </div>
+            </div>
+
+            <button class="login-btn">Login</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section" id="heroSection">
+            <div class="hero-content">
+                <h1 id="heroTitle">Featured Content</h1>
+                <div class="hero-meta" id="heroMeta">
+                    <!-- Metadata injected here -->
+                </div>
+                <p id="heroDesc">Experience cinema like never before with MovieHub Premium.</p>
+                <div class="hero-btns">
+                    <button class="play-btn" id="heroPlayBtn"><i class="fas fa-play"></i> Watch Now</button>
+                    <button class="info-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <div id="movieRows">
+            <!-- Categories will be injected here -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logo">Movie<span>Hub</span></div>
+                <p>Your ultimate destination for the latest movies and TV shows. Stream anytime, anywhere.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">About MovieHub</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MovieHub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

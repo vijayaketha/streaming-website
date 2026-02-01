@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "title": "Pushpa: The Rise",
+        "language": "Telugu",
+        "category": "Trending",
+        "genre": "Action",
+        "poster": "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "description": "A laborer rises through the ranks of a red sandal smuggling syndicate, making some powerful enemies along the way."
+    },
+    {
+        "id": 2,
+        "title": "RRR",
+        "language": "Telugu",
+        "category": "Popular",
+        "genre": "Action/Drama",
+        "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1925&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "description": "A fictional history of two legendary revolutionaries' journey away from home before they began fighting for their country in the 1920s."
+    },
+    {
+        "id": 13,
+        "title": "Sallu",
+        "language": "Telugu",
+        "category": "Latest",
+        "genre": "Action",
+        "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=2070&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+        "description": "A gripping tale of a hero rising in the Telugu film industry."
+    },
+    {
+        "id": 14,
+        "title": "Magadheera",
+        "language": "Telugu",
+        "category": "Top Rated",
+        "genre": "Fantasy/Action",
+        "poster": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=2070&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+        "description": "A warrior is reincarnated after 400 years to settle an ancient score and save his love."
+    },
+    {
+        "id": 11,
+        "title": "Baahubali: The Beginning",
+        "language": "Telugu",
+        "category": "Top Rated",
+        "genre": "Action/Drama",
+        "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=2070&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+        "description": "A child from the Mahishmati kingdom is raised by tribal people and one day learns about his royal heritage."
+    },
+    {
+        "id": 3,
+        "title": "Pathaan",
+        "language": "Hindi",
+        "category": "Trending",
+        "genre": "Action/Thriller",
+        "poster": "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2059&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+        "description": "An Indian spy takes on the leader of a group of mercenaries."
+    },
+    {
+        "id": 4,
+        "title": "Dangal",
+        "language": "Hindi",
+        "category": "Top Rated",
+        "genre": "Biography/Drama",
+        "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=2070&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+        "description": "Former wrestler Mahavir Singh Phogat struggles towards glory at the Commonwealth Games."
+    },
+    {
+        "id": 12,
+        "title": "Jawan",
+        "language": "Hindi",
+        "category": "Latest",
+        "genre": "Action/Thriller",
+        "poster": "https://images.unsplash.com/photo-1621685123223-2eb91df33f63?q=80&w=2070&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+        "description": "A high-octane action thriller rectifying the wrongs in society."
+    },
+    {
+        "id": 5,
+        "title": "The Dark Knight",
+        "language": "English",
+        "category": "Top Rated",
+        "genre": "Action/Crime",
+        "poster": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=2070&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+        "description": "Batman faces the Joker."
+    },
+    {
+        "id": 6,
+        "title": "Inception",
+        "language": "English",
+        "category": "Recommended",
+        "genre": "Sci-Fi/Action",
+        "poster": "https://images.unsplash.com/photo-1535016120720-40c646be8958?q=80&w=2070&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+        "description": "A thief steals secrets through dream-sharing technology."
+    },
+    {
+        "id": 7,
+        "title": "Vikram",
+        "language": "Tamil",
+        "category": "Popular",
+        "genre": "Action/Thriller",
+        "poster": "https://images.unsplash.com/photo-1616530940355-351fabd9524b?q=80&w=1935&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+        "description": "A special agent investigates serial murders."
+    },
+    {
+        "id": 15,
+        "title": "Leo",
+        "language": "Tamil",
+        "category": "Trending",
+        "genre": "Action",
+        "poster": "https://images.unsplash.com/photo-1542204172-356399558651?q=80&w=1974&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+        "description": "A man must confront his past to protect his family."
+    },
+    {
+        "id": 9,
+        "title": "Minnal Murali",
+        "language": "Malayalam",
+        "category": "Trending",
+        "genre": "Action/Comedy",
+        "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=2070&auto=format&fit=crop",
+        "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackAds.mp4",
+        "description": "A tailor gains special powers."
+    }
+]
